@@ -3,7 +3,8 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>2.11</version>
+    <version>4.51</version>
+    <relativePath/>
   </parent>
 
   <properties>
@@ -49,7 +50,6 @@
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>annotations</artifactId>
-      <version>3.0.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
