@@ -3,7 +3,8 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>2.11</version>
+    <version>5.18</version>
+    <relativePath />
   </parent>
 
   <properties>
@@ -19,23 +20,11 @@
   <url>https://github.com/jenkinsci/bitbucket-pullrequest-builder-plugin</url>    
 
   <scm>
-    <connection>scm:git:ssh://git@github.com/jenkinsci/bitbucket-pullrequest-builder-plugin.git</connection>
+    <connection>scm:git:https://git@github.com/jenkinsci/bitbucket-pullrequest-builder-plugin.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/jenkinsci/bitbucket-pullrequest-builder-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/bitbucket-pullrequest-builder-plugin.git</url>
     <tag>bitbucket-pullrequest-builder-1.4.30</tag>
-  </scm>
-  <developers>
-    <developer>
-      <id>nishio_dens</id>
-      <name>nishio_dens</name>
-      <email>nishio@densan-labs.net</email>
-    </developer>
-    <developer>
-      <id>damovsky</id>
-      <name>Martin Damovsky</name>
-      <email>martin.damovsky@gmail.com</email>
-    </developer>
-  </developers>  
+  </scm>  
     
   <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
     <repositories>
@@ -65,7 +54,6 @@
     <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
-      <version>1.9</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.jackson</groupId>
@@ -80,12 +68,10 @@
     <dependency>
       <groupId>org.jenkins-ci</groupId>
       <artifactId>symbol-annotation</artifactId>
-      <version>1.1</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>14.0-rc3</version>
     </dependency>
     <dependency>
       <groupId>org.easymock</groupId>

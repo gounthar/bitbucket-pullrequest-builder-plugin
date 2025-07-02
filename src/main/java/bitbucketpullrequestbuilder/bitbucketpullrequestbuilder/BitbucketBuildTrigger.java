@@ -26,7 +26,7 @@ import org.apache.commons.lang.StringUtils;
 import org.eclipse.jgit.transport.URIish;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
-import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerRequest2;
 
 import antlr.ANTLRException;
 import hudson.Extension;
@@ -381,7 +381,7 @@ public class BitbucketBuildTrigger extends Trigger<Job<?, ?>> {
         }
 
         @Override
-        public boolean configure(StaplerRequest req, JSONObject json) throws FormException {
+        public boolean configure(StaplerRequest2 req, JSONObject json) throws FormException {
             save();
             return super.configure(req, json);
         }
